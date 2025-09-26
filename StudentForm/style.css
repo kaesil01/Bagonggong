@@ -1,0 +1,4 @@
+body { font-family: Arial, sans-serif; max-width:600px; margin:30px; }
+label { display:block; margin:8px 0; }
+input, select { width:100%; padding:6px; box-sizing:border-box; }
+button { padding:8px 12px; margin-top:10px; }

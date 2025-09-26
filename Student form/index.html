@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Student Registration</h1>
+
+  <form action="save.php" method="post">
+    <label>Student ID<br><input name="student_id" required></label><br>
+    <label>First name<br><input name="first_name" required></label><br>
+    <label>Last name<br><input name="last_name" required></label><br>
+    <label>Age<br><input name="age" type="number" min="1"></label><br>
+    <label>Course<br><input name="course"></label><br>
+    <label>Gender<br>
+      <select name="gender">
+        <option value="">--</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+    </label><br><br>
+
+    <button type="submit">Save Student</button>
+  </form>
+
+  <form action="clear.php" method="post" onsubmit="return confirm('Clear all student data?');">
+    <button type="submit">Clear All</button>
+  </form>
+
+  <p><a href="view.php" target="_blank">View saved students</a></p>
+</body>
+</html>
